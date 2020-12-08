@@ -6,7 +6,8 @@ body {
     background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('sho.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    font-family: 'Sue Ellen Francisco', cursive;
 }
 .loginbox {
     width: 420px;
