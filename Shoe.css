@@ -1,0 +1,412 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    
+
+    
+
+}
+header {
+
+    width: 100%; height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('maxwell-nelson-OxjOnFLVcOw-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header {
+    width: 100%; height: 10vh;
+    background: rgba(0, 0, 0, 0.2);
+    font-family: 'Short Stack', cursive;
+
+    color: white; display: flex; justify-content: space-between;
+    align-items: center; text-transform: uppercase;
+}
+nav .logo{
+    width: 25%; text-align: center;
+    font-family: 'Sue Ellen Francisco', cursive;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+
+}
+nav .menu{
+    width: 40%; 
+    display: flex ; justify-content: space-around;
+    font-size: 12px;
+    
+}
+nav .menu a{
+    letter-spacing: 1px;
+width: 25%;
+text-decoration: none;
+color: white;
+font-weight:bold;
+}
+ nav .menu a:hover {
+     color:#00b894; 
+
+ }
+main {
+    color: white;
+    font-family: 'Short Stack', cursive;
+
+width: 100%;
+height: 90vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+section h3{
+    font-size: 35px; font-weight: bold; letter-spacing: 3px;
+   
+}
+ section h1{
+     margin:   0;
+     font-size: 50px;
+     font-weight: 700;
+     text-shadow:  2px 1px 5px black;
+     text-transform: uppercase;
+
+ }
+ section p{
+     font-size: 20px;
+     word-spacing: 2px;
+     margin:  0 0 30px 0;
+     letter-spacing: 3px;
+     text-shadow: 1px 1px  1px black;
+
+ }
+ section .btn1{
+  
+    width: 110px; height: 6vh;
+     border-radius: 10px;
+     outline: none;
+     border: none;
+     background-color: rgba(231, 231, 231, 0.63);
+     color:black;
+     font-size: 11px;
+     font-weight: 500;
+     text-decoration: none;
+     letter-spacing: 1px;
+ }
+ section .btn2{
+  
+    width: 110px; height: 6vh;
+     border-radius: 10px;
+     outline: none;
+     border: none;
+     background-color: rgba(231, 231, 231, 0.63);
+     color:black;
+     font-size: 11px;
+     font-weight: 500;
+     text-decoration: none;
+     letter-spacing: 1px;
+ }
+ 
+section input:active{
+    transform: translateY(4px);
+}
+section .btn2:hover{
+    background-color:#00b894 ;
+    color: white;
+}
+section .btn1:hover{
+    background-color:rgb(32, 25, 25) ;
+    color: white;
+}
+.change-contect:after{
+    content: '';
+    font-size: 70px;
+    animation: changetext 10s infinite linear;
+    color:  #00b894;
+    text-transform: none;
+}
+@keyframes changetext{
+    0%{content:"Nike";}
+    20%{content:"Puma";}
+    35%{content:"Red chief";}
+    60%{content:"Adidas";}
+    80%{content:"Bata";}
+    100%{content:"Reebok";}
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .header{
+        
+        width: 100%;
+        height: 10vh;
+    }
+    .logo{
+        width: auto !important;
+        margin: 0 !important;
+        font-size: .8rem !important;
+        margin-left: 5rem !important;
+    }
+    .menu{
+        
+        margin: 0 !important;
+        margin-right: 5rem !important;
+        font-size: .7rem !important;
+        width: 40% !important;
+        
+    }
+    .menu a{
+        
+        margin: 0 !important;
+        font-size: .1rem !important;
+    }
+    
+    section{
+        width: 90% !important;
+        
+        
+    }
+    section h3{
+        font-size: 1rem;
+        margin: 0 !important;
+
+    }
+    section h1{
+        margin: 0 !important;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    
+        
+    }
+    section p{
+        margin: 0 !important;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin: 15px 0 15px 0 !important;
+    
+        
+    }
+    .change-contect:after{
+        font-size: 3rem;
+        
+        height: auto;
+        margin: 0 !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for mobile */
+
+@media only screen and (min-width: 400px) and (max-width: 600px){
+    .header{
+        
+        width: 100%;
+        height: 10vh;
+        
+    }
+    .logo{
+        width: auto !important;
+        margin: 0 !important;
+        width: 100% !important;
+        font-size: .8rem !important;
+       
+    }
+    .menu{
+        display: none !important;
+        margin: 0 !important;
+        margin-right: 5rem !important;
+        font-size: .7rem !important;
+        width: 40% !important;
+        
+    }
+    .menu a{
+        display: none;
+        margin: 0 !important;
+        font-size: .1rem !important;
+    }
+    
+    section{
+        width: 90% !important;
+        
+        
+    }
+    section h3{
+        font-size: 1rem;
+        margin: 0 !important;
+
+    }
+    section h1{
+        margin: 0 !important;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    
+        
+    }
+    section p{
+        margin: 0 !important;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin: 15px 0 15px 0 !important;
+    
+        
+    }
+    .change-contect:after{
+        font-size: 3rem;
+        
+        height: auto;
+        margin: 0 !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for small mobile */
+
+@media only screen and (min-width: 100px) and (max-width: 400px){
+    .header{
+        
+        width: 100%;
+        
+        height: 10vh;
+        
+    }
+    .logo{
+        width: auto !important;
+        margin: 0 !important;
+        width: 100% !important;
+        font-size: .7rem !important;
+        
+    }
+    .menu{
+        display: none !important;
+    }
+    
+    section{
+        width: 90% !important;
+        
+        
+    }
+    section h3{
+        font-size: .8rem;
+        margin: 0 !important;
+        margin: 10px 0 5px 0 !important;
+
+    }
+    section h1{
+        margin: 0 !important;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    
+        
+    }
+    section p{
+        margin: 0 !important;
+        font-size: .8rem;
+        letter-spacing: 1px;
+        margin: 15px 0 15px 0 !important;
+    
+        
+    }
+    .change-contect:after{
+        font-size: 2.5rem;
+        
+        height: auto;
+        margin: 0 !important;
+    }
+
+    section .btn1{
+  
+        width: 80px; height: 5vh;
+         border-radius: 8px;
+         outline: none;
+         border: none;
+         background-color: rgba(231, 231, 231, 0.63);
+         color:black;
+         font-size: 9px;
+         font-weight: 500;
+         text-decoration: none;
+         letter-spacing: 1px;
+     }
+     section .btn2{
+  
+        width: 80px; height: 5vh;
+         border-radius: 8px;
+         outline: none;
+         border: none;
+         background-color: rgba(231, 231, 231, 0.63);
+         color:black;
+         font-size: 9px;
+         font-weight: 500;
+         text-decoration: none;
+         letter-spacing: 1px;
+     }
+   
+}
+

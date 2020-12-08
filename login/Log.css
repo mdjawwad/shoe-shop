@@ -1,0 +1,404 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    width: 100%; height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('sho.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.loginbox {
+    width: 420px;
+    height: 450px;
+    background:black;
+    color: #fff;
+    top: 50%;
+    
+    left: 50%;
+    position: absolute;
+    transform:  translate(-50%,-50%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  
+}
+.loginbox form{
+  
+    
+    width: 85%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.loginbox form .one{
+  
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user {
+    width: 70px;
+    height: 70px;
+    
+    margin-bottom: 7px;
+
+}
+h2 {
+    letter-spacing: 0.5px;
+    margin: 0;
+
+    
+    
+    text-align: center; 
+    font-family: 'Short Stack', cursive;;
+    font-size: 25px;
+}
+.loginbox p {
+    margin: 0;
+    letter-spacing: 0.4px;
+    padding: 0;
+    font-weight:bold ;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+}
+ .loginbox input {
+     width: 100%;
+     margin-bottom :18px ;
+
+}
+.loginbox input[type = "Text"] , input[type = "password"]  {
+border: none;
+letter-spacing: 0.3px;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+width: 100%;
+height: 30px;
+color: floralwhite;
+font-size: 14px;
+}
+.loginbox input[TYPE = SUBMIT]{
+    letter-spacing: 0.5px;
+  width: 7rem;
+    border: none;
+    outline: none;
+    height: 35px;
+    margin: 0 5px 0 5px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 40px;
+}
+.loginbox input[TYPE = button]{
+    letter-spacing: 0.5px;
+    width: 7rem;
+    border: none;
+    outline: none;
+    height: 35px;
+    margin: 0 5px 0 5px;    
+    background:wheat;
+    color: black;
+    font-size: 13px;
+    border-radius: 40px;
+}
+.loginbox input[type= button]:hover
+{
+    cursor: pointer;
+    background:lightslategrey;
+    color: #000;
+}
+.loginbox input[type=submit]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1px;
+    color: darkgray;
+}
+.loginbox .footer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 !important;
+    width: 80%;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 800px) and (max-width: 1000px){
+
+    .loginbox{
+        background-color: teal;
+        width: 40% !important;
+        height: 70vh !important;
+    }
+    .loginbox .lost {
+        margin-top: 10px;
+       
+        
+    }
+   
+
+}
+
+
+
+
+/* for mobile */
+
+@media only screen and (min-width: 400px) and (max-width: 800px){
+
+    .loginbox{
+        width: 50% !important;
+        height: 60vh !important;
+    }
+    .loginbox .lost {
+        margin-top: 10px;
+       
+        
+    }
+    .loginbox input[TYPE = SUBMIT]{
+        letter-spacing: 0.5px;
+      width: 5rem;
+        border: none;
+        outline: none;
+        height: 30px;
+        margin: 0 3px 0 3px;
+    
+        color: #fff;
+        font-size: 12px;
+        border-radius: 40px;
+    }
+    .loginbox input[TYPE = BUTTON]{
+        letter-spacing: 0.5px;
+      width: 5rem;
+        border: none;
+        outline: none;
+        height: 30px;
+        margin: 0 3px 0 3px;
+   
+        color: #fff;
+        font-size: 12px;
+        border-radius: 40px;
+    }
+
+
+
+
+
+
+
+
+    .loginbox form{
+  
+    
+        width: 90%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .loginbox form .one{
+      
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .user {
+        width: 60px;
+        height: 60px;
+        
+        margin-bottom: 7px;
+    
+    }
+    h2 {
+        letter-spacing: 0.5px;
+        margin: 0;
+    
+        
+        
+        text-align: center; 
+        font-family: 'Short Stack', cursive;;
+        font-size: 20px;
+    }
+    .loginbox p {
+        margin: 0;
+        letter-spacing: 0.4px;
+        padding: 0;
+        font-weight:bold ;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:13px;
+    }
+     .loginbox input {
+         width: 100%;
+         margin-bottom :13px;
+    
+    }
+    .loginbox .footer{
+        display: flex !important;
+        align-items: center;
+        margin: 0 !important;
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .loginbox .footer a{
+        margin: 0 !important;
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for small mobile */
+
+@media only screen and (min-width: 200px) and (max-width: 400px){
+    body{
+        background-position: center;
+        background-size: 60rem;
+    }
+
+    .loginbox{
+        width: 60% !important;
+        height: 60vh !important;
+        
+    }
+    .loginbox .lost {
+        margin-top: 10px;
+       
+        
+    }
+    .loginbox input[TYPE = SUBMIT]{
+        letter-spacing: 0.5px;
+      width: 5rem;
+        border: none;
+        outline: none;
+       
+        height: 30px;
+        margin: 0 3px 0 3px;
+    
+        color: #fff;
+        font-size: 12px;
+        border-radius: 40px;
+    }
+    .loginbox input[TYPE = BUTTON]{
+        letter-spacing: 0.5px;
+      width: 5rem;
+        border: none;
+        outline: none;
+        height: 30px;
+        margin: 0 3px 0 3px;
+   
+        color: #fff;
+        font-size: 12px;
+        border-radius: 40px;
+    }
+
+
+
+
+
+
+
+
+    .loginbox form{
+  
+    
+        width: 90%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .loginbox form .one{
+      
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .user {
+        width: 50px;
+        height: 50px;
+        
+        margin-bottom: 7px;
+    
+    }
+    h2 {
+        letter-spacing: 0.5px;
+        margin: 0;
+    
+        
+        
+        text-align: center; 
+        font-family: 'Short Stack', cursive;;
+        font-size: 17px;
+    }
+    .loginbox p {
+        margin: 0;
+        letter-spacing: 0.4px;
+        padding: 0;
+        font-weight:bold ;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:11px;
+    }
+  .loginbox form input[type= text]  {
+         width: 100%;
+         font-size: 10px;
+         margin-bottom :13px;
+    
+    }
+    .loginbox form input[type= password]  {
+        width: 100%;
+        font-size: 10px;
+        margin-bottom :13px;
+   
+   }
+    .loginbox .footer{
+        display: flex !important;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 !important;
+        width: 80%;
+        margin-top: 10px !important;
+  
+    }
+    .loginbox .footer a{
+        margin: 0 !important;
+        font-size: 9px;
+    }
+
+}
