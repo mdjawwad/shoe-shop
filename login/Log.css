@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     width: 100%; height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('sho.jpg');
+    background-image: url('/login/sho.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
-    font-family: 'Sue Ellen Francisco', cursive;
+    font-family:  cursive;
 }
 .loginbox {
     width: 420px;
@@ -286,19 +286,20 @@ font-size: 14px;
 
 /* for small mobile */
 
-@media only screen and (min-width: 200px) and (max-width: 400px){
+@media only screen and (min-width: 100px) and (max-width: 300px){
     body{
         background-position: center;
-        background-size: 60rem;
+        background-size: cover;
     }
 
     .loginbox{
-        width: 60% !important;
-        height: 60vh !important;
+        width: 80% !important;
+        height: 55vh !important;
         
     }
     .loginbox .lost {
-        margin-top: 10px;
+        margin-top: 80px;
+        background-color: tomato;
        
         
     }
